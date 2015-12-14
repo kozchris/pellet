@@ -14,12 +14,10 @@ import static org.junit.Assert.assertFalse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
 import org.junit.AfterClass;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.mindswap.pellet.PelletOptions;
@@ -298,9 +296,9 @@ public class MiscExplanationTests {
 		Resource subject = ResourceFactory.createResource("http://www.inmindcomputing.com/test/test-commands.owl#BOMType1");
 		Property predicate = ResourceFactory.createProperty("http://www.inmindcomputing.com/test/test-commands.owl#hasProduct");
 
-		OntModel rootModel = ModelFactory.createOntologyModel( org.mindswap.pellet.jena.PelletReasonerFactory.THE_SPEC );
+		OntModel rootModel = ModelFactory.createOntologyModel( PelletReasonerFactory.THE_SPEC );
 		
-		org.mindswap.pellet.jena.PelletReasonerFactory.THE_SPEC.setDocumentManager(new OntDocumentManager() {
+		PelletReasonerFactory.THE_SPEC.setDocumentManager(new OntDocumentManager() {
 
 			@Override
 			protected void loadImport(OntModel model, String importURI, List<String> queue) {

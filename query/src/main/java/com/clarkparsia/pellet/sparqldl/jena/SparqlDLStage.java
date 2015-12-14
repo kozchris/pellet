@@ -129,7 +129,7 @@ class SparqlDLStage {
 
 		/**
 		 * @param input
-		 * @param context
+		 * @param execCxt
 		 */
 		public PelletQueryIterator(PelletInfGraph pellet, Query query, QueryIterator input,
 				ExecutionContext execCxt) {

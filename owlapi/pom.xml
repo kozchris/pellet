@@ -28,5 +28,9 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.github.ansell.aterms</groupId>
+			<artifactId>aterm-java</artifactId>
+		</dependency>
 	</dependencies>
 </project>
